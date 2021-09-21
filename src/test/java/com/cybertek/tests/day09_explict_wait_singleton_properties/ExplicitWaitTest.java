@@ -2,12 +2,15 @@ package com.cybertek.tests.day09_explict_wait_singleton_properties;
 
 import com.cybertek.utility.TestBase;
 import org.junit.jupiter.api.Test;
+<<<<<<< HEAD
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
+=======
+>>>>>>> github/master
 
 public class ExplicitWaitTest extends TestBase {
 
@@ -16,6 +19,7 @@ public class ExplicitWaitTest extends TestBase {
     public void testWaitForTitle(){
 
         //1. navigate to http://practice.cybertekschool.com/dynamic_loading
+<<<<<<< HEAD
         driver.get(" http://practice.cybertekschool.com/dynamic_loading");
         //2. Click on Example 7
         driver.findElement(By.partialLinkText("Example 7")).click();
@@ -43,9 +47,20 @@ public class ExplicitWaitTest extends TestBase {
 
 
         System.out.println("END");
+=======
+
+        //2. Click on Example 7
+
+        //3. The title will show loading... until certain time ,
+        // we want to wait until the title value become "Dynamic Title"
+>>>>>>> github/master
 
     }
 
 
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> github/master
