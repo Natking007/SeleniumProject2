@@ -44,6 +44,27 @@ public class ExplicitWaitTest extends TestBase {
 
         System.out.println("END");
 
+
+    }
+    @Test
+    public void testByTextToBe(){
+        //1. navigate to http://practice.cybertekschool.com/dynamic_loading
+        driver.get(" http://practice.cybertekschool.com/dynamic_loading");
+        //2. Click on Example 7
+        driver.findElement(By.partialLinkText("Example 7")).click();
+
+        WebElement alertArea = driver.findElement(By.id("alert"));
+        System.out.println("alertArea.getText() = " + alertArea.getText());
+
+        WebDriverWait wait = new WebDriverWait(driver, 7);
+        // wait for the image show up
+        wait.until( visibilityOfElementLocated(By.xpath("//img[@alt='square pants']")) ) ;
+
+        alertArea = driver.findElement(By.id("alert"));
+
+        System.out.println("alertArea.getText() = " + alertArea.getText());
+
+
     }
 
 
